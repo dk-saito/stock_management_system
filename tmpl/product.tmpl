@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>在庫管理</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<br>
+<h2>商品登録</h2>
+<form method="post" action="add_product.php">
+<table border=1>
+	<tr>
+		<td>商品名</td>
+		<td><input name="name" type="text" value=""></td>
+	</tr>
+	<tr>
+		<td>在庫</td>
+		<td><input name="stock" type="text" value=""></td>
+	</tr>
+	<tr>
+		<td>値段</td>
+		<td><input name="price" type="text" value=""></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="submit" name="sub" value="送信"></td>
+	</tr>
+</table>
+<input type="hidden" name="mode" value="item">
+<input type="hidden" name="state" value="insert">
+</form>
+<br>
+
+<h2>商品一覧</h2>
+<table border=1>
+<tr><th>商品ID</th><th>商品名</th><th>値段</th>
+!product_data!
+</table>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Stock Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <h1>Stock Management System</h1>
+    <form action="add_product.php" method="post">
+      <p>Name</p>
+      <input type="text" name="name" value="">
+      <p>Stock</p>
+      <input type="text" name="stock" value="">
+      <p>Price</p>
+      <input type="text" name="price" value="">
+      <br>
+      <input type="submit" value="ADD">
+    </form>
+
+    <h2>商品一覧</h2>
+    <table border="1">
+    <tr><th>商品ID</th><th>商品名</th><th>値段</th><th>編集</th><th>削除</th>
+    !item_data!
+    </table>
+
+  </body>
+</html>
